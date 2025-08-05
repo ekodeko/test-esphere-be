@@ -1,0 +1,41 @@
+# index / list data
+GET http://localhost:8001/api/products
+Accept: 'application/json
+
+
+####
+# detail product
+GET http://localhost:8001/api/products/1
+Content-Type: 'application/json'
+Accept: 'application/json
+
+
+#####
+# create product
+POST http://localhost:8001/api/products
+Content-Type: 'application/json'
+Accept: 'application/json
+
+{
+    "name": "Product Tiga",
+    "price": 30000,
+    "stock": 30
+}
+
+#####
+# create product
+PUT http://localhost:8001/api/products/1
+Content-Type: 'application/json'
+Accept: 'application/json
+
+{
+    "name": "Product A",
+    "price": 12000,
+    "stock": 100
+}
+
+#####
+# create product
+DELETE  http://localhost:8001/api/products/1
+Content-Type: 'application/json'
+
